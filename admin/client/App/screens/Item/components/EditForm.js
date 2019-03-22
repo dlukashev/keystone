@@ -85,7 +85,6 @@ var EditForm = React.createClass({
 			}
 		}
 		//props.value = this.state.values[field.path] || field.defaultValue;
-		props.value = this.state.values[field.path] === undefined ? field.defaultValue : this.state.values[field.path];
 		props.values = this.state.values;
 		props.onChange = this.handleChange;
 		props.mode = 'edit';
